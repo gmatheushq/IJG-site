@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços de Terapia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo da Empresa" class="logo">
+        <a href="https://wa.me/5511999999999" class="whatsapp-button">Entre em Contato pelo WhatsApp</a>
+    </header>
+    <main>
+        <h1>Escolha um Serviço</h1>
+        <div class="services">
+            <button class="service-btn" data-service="Psicanálise">Psicanálise</button>
+            <button class="service-btn" data-service="Psicanálise Online">Psicanálise Online</button>
+            <button class="service-btn" data-service="Constelação Familiar">Constelação Familiar</button>
+            <button class="service-btn" data-service="Constelação Familiar Online">Constelação Familiar Online</button>
+            <button class="service-btn" data-service="Barras de Access">Barras de Access</button>
+            <button class="service-btn" data-service="Facelift">Facelift</button>
+            <button class="service-btn" data-service="Reiki">Reiki</button>
+            <button class="service-btn" data-service="Reiki Online">Reiki Online</button>
+            <button class="service-btn" data-service="Thetahealing">Thetahealing</button>
+            <button class="service-btn" data-service="Thetahealing Online">Thetahealing Online</button>
+        </div>
+        <div id="schedule" class="hidden">
+            <h2>Escolha o Dia e Horário</h2>
+            <input type="date" id="datePicker">
+            <div id="timeSlots"></div>
+        </div>
+        <div id="confirmation" class="hidden">
+            <h2>Confirme Seus Dados</h2>
+            <form id="bookingForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" required>
+                <button type="submit">Confirmar</button>
+            </form>
+        </div>
+    </main>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
